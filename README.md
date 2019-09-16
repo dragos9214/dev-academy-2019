@@ -12,12 +12,15 @@
                                                               |___/ 
       
 
-##Purpose
+## Purpose
 The aim of this project is to build a Movie Store from scratch to production level.
 
-##Structure
+## Structure
 The development timeline is built using branches with the following name format development-##. All branches contain a branch-README.md file describing the changes that took place. 
 The final project can be found in the master branch.
+
+## Info
+The project is opensource and can be downloaded cloned from https://github.com/dragos9214/dev-academy-2019.
 
 ## Technology
   * Java 8
