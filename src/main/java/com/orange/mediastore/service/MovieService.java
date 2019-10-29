@@ -1,7 +1,7 @@
-package com.orange.moviestore.service;
+package com.orange.mediastore.service;
 
-import com.orange.moviestore.model.Movie;
-import com.orange.moviestore.repository.MoviesRepository;
+import com.orange.mediastore.model.Movie;
+import com.orange.mediastore.repository.MoviesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
