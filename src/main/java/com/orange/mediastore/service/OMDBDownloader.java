@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.math.RoundingMode;
+import java.net.URI;
 import java.text.DecimalFormat;
 import java.time.Duration;
 import java.time.LocalDate;
@@ -146,6 +147,7 @@ public class OMDBDownloader {
 
     private void setCommonFields(Media result, MediaDto mediaDto) {
         result.title = mediaDto.title;
+        result.imageUri = URI.create(mediaDto.poster);
         result.director = mediaDto.director;
         result.description = generateDescription(mediaDto);
         result.release = LocalDate.parse(mediaDto.released, DateTimeFormatter.ofPattern("dd MMM yyyy"));
