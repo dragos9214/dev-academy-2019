@@ -147,7 +147,7 @@ public class OMDBDownloader {
 
     private void setCommonFields(Media result, MediaDto mediaDto) {
         result.title = mediaDto.title;
-        result.imageUri = URI.create(mediaDto.poster);
+        result.imageUri = mediaDto.poster;
         result.director = mediaDto.director;
         result.description = generateDescription(mediaDto);
         result.release = LocalDate.parse(mediaDto.released, DateTimeFormatter.ofPattern("dd MMM yyyy"));

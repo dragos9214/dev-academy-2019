@@ -7,14 +7,14 @@ import java.net.URI;
 import java.time.LocalDate;
 import java.util.Set;
 
-@Document(collection = "media")
+@Document(collection = "media_poe")
 public abstract class Media {
 
     public String id;
     @Indexed(unique = true)
     public String title;
     public LocalDate release;
-    public URI imageUri;
+    public String imageUri;
     public String description;
     public String director;
     public Set<String> actors;
