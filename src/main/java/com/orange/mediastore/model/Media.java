@@ -14,7 +14,7 @@ public abstract class Media {
     @Indexed(unique = true)
     public String title;
     public LocalDate release;
-    public URI imageUri;
+    public String imageUri;
     public String description;
     public String director;
     public Set<String> actors;
