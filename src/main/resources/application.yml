@@ -24,5 +24,5 @@ media-service:
   check-frequency: 60000
 
 omdb:
-  apiKey: 69209ae6
+  apiKey: 37a4cb
   url: http://www.omdbapi.com
